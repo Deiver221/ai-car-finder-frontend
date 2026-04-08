@@ -27,4 +27,4 @@ recomendaciones personalizadas.
 
 ## 📷 Screenshot
 
-![Imagen demostrativa](/frontend/src/assets/image1.png)
+![Imagen demostrativa](./src/assets/image1.png)

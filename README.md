@@ -28,3 +28,9 @@ recomendaciones personalizadas.
 ## 📷 Screenshot
 
 ![Imagen demostrativa](./src/assets/image1.png)
+
+## 🧠 Decisiones técnicas
+
+- Se normalizaron los features a minúsculas para evitar inconsistencias
+- Se utilizó whereJsonContains para filtros dinámicos
+- Se optimizó el uso de IA evitando llamadas innecesarias

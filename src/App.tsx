@@ -1,6 +1,7 @@
 import { useState } from "react";
 import SearchBar from "./components/SearchBar";
 import Results from "./components/Result";
+const API_URL = import.meta.env.VITE_API_URL;
 
 function App() {
   const [data, setData] = useState(null);
@@ -8,7 +9,7 @@ function App() {
   const handleSearch = async (query: string) => {
     try {
       const res = await fetch(
-        `http://127.0.0.1:8000/api/ai-search?query=${encodeURIComponent(query)}`,
+        `${API_URL}/ai-search?query=${encodeURIComponent(query)}`,
         {
           method: "POST",
           headers: {
@@ -38,7 +39,7 @@ function App() {
               href="#"
               className="text-sky-600 font-semibold border-b-2 border-sky-500 font-['Manrope',sans-serif] tracking-tight center"
             >
-              Buscador
+              Inicio
             </a>
           </nav>
           <button className="px-5 py-2 rounded-full font-medium text-slate-500 hover:bg-slate-50 transition-colors">
